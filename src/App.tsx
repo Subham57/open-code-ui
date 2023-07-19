@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
-import Signup from './components/signup/SignUp';
-import Signup1 from './components/signup/Signup1';
+import Signup from './components/signup/Signup'
+import Home from './components/home/Home';
 
 class App extends React.Component {
   render() {
@@ -10,8 +10,8 @@ class App extends React.Component {
       <>
         <BrowserRouter>
           <Routes>
-              <Route path='/signup' element={<Signup />} ></Route>
-              <Route path='/signup1' element={<Signup1 />} ></Route>
+            <Route path='/' element={<Home />} ></Route>
+            <Route path='/signup' element={<Signup />} ></Route>
           </Routes>
         </BrowserRouter>
       </>
